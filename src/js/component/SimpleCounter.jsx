@@ -1,11 +1,14 @@
 import React from "react";
 import propTypes from "prop-types";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
+
 
 //create your first component
 const SimpleCounter = (props) => {
 	return 	<div className="bg-dark text-white" style={{fontSize: 100, display: "flex", justifyContent: "space-around", marginLeft: 50, marginRight:50, }}>
 				<div className="clock" style={{border:"2px solid gray",width: 153.2, textAlign:"center"}}>
-					<i class="fa-regular fa-clock"></i>				
+					<FontAwesomeIcon icon={faClock} />			
 				</div>
 				<div className="one" style={{border:"2px solid gray", width: 153.2, textAlign:"center"}}>{props.boxOne}</div>
       			<div className="two" style={{border:"2px solid gray", width: 153.2, textAlign:"center"}}>{props.boxTwo}</div>
