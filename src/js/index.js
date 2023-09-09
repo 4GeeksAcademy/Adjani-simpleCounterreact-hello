@@ -25,4 +25,4 @@ setInterval(function(){
 	);
 	
 	counter ++;
-}, 100)
+}, 1000)
